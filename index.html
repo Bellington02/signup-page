@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>This is my signup page</title>
+</head>
+<div class="form-wrapper">
+    <aside class="info-side">
+        <div class="blackquote-wrapper">
+            <img 
+                src="assets/returns.png" alt="Returns"
+                class="returns"
+            >
+        <blockquote>    
+            Yesterdays failure does not dictate
+            tomorrows success!
+        </blockquote>
+        <div class="author">
+            <img src="assets/avatar.png" alt="Avatar" class="avatar">
+            <span class="author-name">Clement Oduro</span>
+        </div>   
+        </div>
+    </aside>
+    <main class="form-side">
+        <a href="#" title="Logo">
+            <img src="assets/Laplace.svg" alt="Laplace Logo" class="Logo">
+        </a>
+        <form class="my-form">
+            <div class="form-welcome-row">
+                <h1>Welcome back! &#128079;</h1>
+                <h2>Login with your account!</h2>
+            </div>
+            <div class="socials-row">
+                <a href="#" title="Use Apple">
+                    <img src="assets/apple.png" alt="Apple"> Continue with Apple
+                </a>
+            </div>
+            <div class="socials-row">
+                <a href="#" title="Use Google">
+                    <img src="assets/google.png" alt="Google"> Continue with Google
+                </a>
+            </div>
+            <div class="divider">
+                <div class="divider-line"></div> 
+                or
+                <div class="divider-line"></div>
+            </div>
+            <div class="text-field">
+                <label for="email">Email</label>
+                <input
+                     type="email" id="email" name="email" autocomplete="off"
+                     placeholder="you@example.com" required>
+                <div class="error-message">Email in wrong format. Retype</div>
+            </div>
+            <div class="text-field">
+                <label for="password">Password</label>
+                <input 
+                     id="password" type="password" name="password" placeholder="Your password"
+                     title="Minimum 5 characters at least 1 Alphabet and 1 Number"
+                     pattern="(?=.*[A-Za-z])(?=.*\d)(A-Za-z\d){5,}$" required>
+            </div>
+            <button class="my-form__button" type="submit">
+            Sign In
+            </button>
+            <div class="my-form__actions">
+                <div class="my-form__row">
+                    <span>Don't have an account?</span>
+                    <a href="#" title="Reset Password">
+                         Sign Up Now
+                </a>
+                </div>
+            </div>
+        </form>
+    </main>
+</div>
